@@ -1,0 +1,25 @@
+
+.nav{
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.th, td {
+    border: 1px solid rgb(255, 255, 255);
+    text-align:center;
+    padding: 2rem;
+}
+.table{
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.header{
+    background-color: rgb(109, 131, 131);
+    text-align:center;
+}
+
+.body{
+    background-color: rgb(109, 131, 131);
+}

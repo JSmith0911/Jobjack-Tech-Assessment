@@ -1,0 +1,43 @@
+<nav class="nav">
+  <br>
+  <app-greeting></app-greeting>
+  <br>
+</nav>
+
+<div class="div" style="text-align:center">
+  <header class="header">
+    <br>
+    <p>This application allows you to search local directories.</p>
+    <p> It will display file paths, size and the file attributes for selected directory.</p>
+    <br>
+    <form (ngSubmit)="onSubmit(search)" #search="ngForm">
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Search</button>
+        <input ngModel name="Query" type="text" id="searchQuery-root" class="form-control" placeholder="Enter directory path">
+      </div>
+    </form>
+    <br>
+  </header>
+
+<body class="body" style="text-align:center">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Search</th><br>
+        <th scope="col">File Path</th>
+        <th scope="col">File size</th>
+        <th scope="col">Attribute information</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <tr #ngfor="let post of posts">
+        <td>{{post.Query}}</td>
+        <td>{{post.filePath}}</td>
+        <td>{{post.fileSize}}</td>
+        <td>{{post.attributeInfo}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
