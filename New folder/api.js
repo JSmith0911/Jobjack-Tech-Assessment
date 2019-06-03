@@ -40,7 +40,7 @@ api.route('/api/getDirectory').get((req, res) => {
   //     text: req.body.text,
   //   };
   
-  //   messages[id] = directory;
+  //   directories[id] = directory;
   
   //   return res.send(directory);
   // });
